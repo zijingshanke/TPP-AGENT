@@ -1,0 +1,22 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by ccggyy2002 (Delphi) -->
+
+<struts-config>
+	<form-beans>
+
+		<form-bean name="agentUserRoleRightListForm"
+			type="com.fordays.fdpay.right.AgentUserRoleRightListForm" />
+	</form-beans>
+	<action-mappings>
+		<action name="agentUserRoleRightListForm" parameter="thisAction"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			path="/right/rightlist" validate="false" scope="request">
+
+			<forward name="listagentuserofright"
+				path="/right/listAgentUserOfRight.jsp" />
+			<forward name="editagentuserright"
+				path="/right/editAgentUserRight.jsp" />
+			<forward name="viewAgentUsers" path="/agentUser/viewAgentUsers.jsp"></forward>
+		</action>
+	</action-mappings>
+</struts-config>

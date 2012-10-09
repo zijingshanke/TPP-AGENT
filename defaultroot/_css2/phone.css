@@ -1,0 +1,90 @@
+#maincontent {
+	width:auto;
+	margin:0 auto;
+	padding:0;
+
+}
+
+#maincontent .mainimg {
+	margin:0;
+	padding:0;
+	float: left;
+}
+.Prepaidcont {
+	width: auto;
+	margin-left:10px;
+	padding:0;
+	float:left;
+}
+
+.Prepaidcont .confoot {
+	margin:20px 0 0 40px;
+}
+
+.Prepaidcont .confoot p {
+	margin:5px 0;
+	padding:0;
+	font-size:12px;
+}
+
+.Prepaidcont .content {
+	width:476px;
+	height:223px;
+	paddig;0;
+	margin-top:10px;
+	background:#f5f5f5;
+	border:1px solid #cccccc;
+	position:relative;
+}
+
+h3 {
+	margin:10px;
+	padding:0;
+	font-size:14px;
+}
+
+.Prepaidcont .inputlist {
+	position:absolute;
+	left:40px;
+	top:40px;
+}
+
+.Prepaidcont td {
+	margin:0;
+	padding:5px 0;
+}
+
+.Prepaidcont .butbg {
+	margin:0;
+	color:#FFF;
+	width:80px;
+	height:24px;
+	line-height:20px;
+	background:url(../_img/button.jpg) no-repeat;
+	border:none;
+}
+
+#askedquestions {
+	float:left;
+	border:1px solid #e4e4e4;
+	margin-left:10px;
+	padding:0;
+	width:244px;
+	padding:0 10px 10px 0;
+}
+
+#askedquestions li {
+	font-weight:bold;
+	margin-left:10px;
+	padding-left: 15px;
+	background: url(../_img/doc.jpg) no-repeat 0 5px;
+	}
+
+#askedquestions p {
+	color:#666;
+	padding:0;
+	margin:5px 0 10px 10px;
+	line-height:20px;
+	font-size:12px;
+	font-weight:normal;
+}

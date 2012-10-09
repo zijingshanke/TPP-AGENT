@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+#tips_box {
+	width: 384px;
+	height: 174px;
+	padding: 8px;
+	font-size: 12px;
+	background: url('../_img/tips_box_bg.gif') no-repeat;
+}
+
+#tips_box h1,#tips_box h2,#tips_box p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+#tips_box h1 {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 6px;
+	background: #e4e4e4;
+}
+
+#tips_box h2 {
+	line-height: 2em;
+	margin-top: 10px;
+	padding: 0 6px;
+}
+
+#tips_box p {
+	line-height: 1.8em;
+	padding: 0 6px;
+	text-indent: 2em;
+}
+
+#tips_box .btn_group {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#tips_box .btn_group input {
+	border: 0;
+	height: 22px;
+	width: 60px;
+	font-size: 12px;
+	cursor: pointer;
+	background: url('../_img/tips_box_btn.gif') no-repeat;
+}
+</style>
+		<title>温馨提示</title>
+	</head>
+	<body onunload="closeme()">
+		<div id="tips_box">
+			<h1>
+				温馨提示
+			</h1>
+			<h2>
+				尊敬的钱门用户，您好：
+			</h2>
+			<p>
+				在您通过钱门使用工商银行充值时，为保证交易成功，在进入工行支付成功界面
+				后，按照工行的提示耐心等待5秒自动返回商户页面。请不要急于关闭窗口，避免影响交易！
+			</p>
+			<div class="btn_group">
+				<input type="button" value="确 定" onclick="self.close();" />
+			</div>			
+		</div>
+	</body>
+	<script language="JavaScript">
+	function closeme(){
+		   window.returnValue=1;		 
+	}		
+	</script>
+</html>

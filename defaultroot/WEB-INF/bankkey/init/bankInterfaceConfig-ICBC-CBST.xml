@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BANK>
+	<!-- 工商银行接口参数配置  钱门 -->
+	<ICBC>
+		<!-- 集中式银商转帐系统接口 -->
+		<CBST>
+			<Sender>
+				<!-- 机构标识 -->
+				<InstId>2002022509100027149</InstId>
+				<!-- 机构名称 -->
+				<InstNm>abc</InstNm>
+				<!--  分支机构编码 -->
+				<BrchId>02002</BrchId>
+				<!--  分支机构名称 -->
+				<BrchNm>efg</BrchNm>
+				<!--  网点号 -->
+				<SubBrchId>00225</SubBrchId>
+				<!--  网点名称 -->
+				<SubBrchNm>hig</SubBrchNm>
+			</Sender>
+			<Recver>
+				<!-- 机构标识 -->
+				<InstId>963</InstId>
+				<!-- 机构名称 -->
+				<InstNm>cba</InstNm>
+				<!--  分支机构编码 -->
+				<BrchId>852</BrchId>
+				<!--  分支机构名称 -->
+				<BrchNm>gfe</BrchNm>
+				<!--  网点号 -->
+				<SubBrchId>741</SubBrchId>
+				<!--  网点名称 -->
+				<SubBrchNm>gih</SubBrchNm>
+			</Recver>
+								
+		</CBST>
+	</ICBC>
+</BANK>

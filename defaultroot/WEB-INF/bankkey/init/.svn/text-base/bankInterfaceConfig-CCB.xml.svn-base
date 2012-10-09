@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BANK>
+	<!-- 建设银行接口配置 -->
+	<CCB>
+		<!-- B2C接口 -->
+		<B2C>
+			<!--商户代码(客户号) -->
+			<!--品尚:105440442150001 -->
+			<!--钱门:105440442150002 -->
+			<merchantid>105440442150002</merchantid>
+			<!--商户柜台代码 -->
+			<!--品尚:100000785-->
+			<!--钱门:100001326-->
+			<posid>100001326</posid>
+			<!--分行代码 -->
+			<branchid>441000000</branchid>
+			<!--币种 -->
+			<curcode>01</curcode>
+			<!--交易码:个人用户 -->
+			<txcode>520100</txcode>
+			<interfacePath>https://ibsbjstar.ccb.com.cn/app/ccbMain</interfacePath>
+			<!--商户公钥 -->
+			<!--品尚:bankkey/ccb/b2c/ccbpubkey.txt-->
+			<!--钱门:bankkey/ccb/b2c/qmpaypubkey.txt-->
+			<publicKey>bankkey/ccb/b2c/qmpaypubkey.txt</publicKey>
+		</B2C>
+		<!--B2B接口 -->
+		<B2B>
+			<merchantid>105440442150002</merchantid>
+			<posid>100001326</posid>
+			<branchid>441000000</branchid>
+			<curcode>01</curcode>
+			<!--交易码:企业用户 -->
+			<txcode>690401</txcode>
+			<interfacePath>https://ibsbjstar.ccb.com.cn/app/ccbMain</interfacePath>
+			<publicKey>bankkey/ccb/b2b/qmpaypubkey.txt</publicKey>
+		</B2B>
+	</CCB>
+</BANK>

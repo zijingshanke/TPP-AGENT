@@ -1,0 +1,19 @@
+<html>
+
+
+<head>
+
+</head>
+
+<body>
+
+
+<form name="form1" method="post" action="bb.jsp">
+
+ 商品名称：<input name="subject" id="subject"  type="text">id
+商品描述：<input name="body" id="body" type="text">id
+</form>
+</body>
+
+
+</html>

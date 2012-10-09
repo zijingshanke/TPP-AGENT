@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="false" default-autowire="no"
+	default-dependency-check="none">
+	<bean id="noUtil" class="com.neza.base.NoUtil">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+	
+	<bean id="dBCHPool" class="com.neza.database.DBCHPool">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
+	<bean id="mailSender" class="com.neza.mail.MailSender">
+		<property name="jmailSender">
+			<ref bean="jmailSender" />
+		</property>
+	</bean>
+	<bean id="SMUtil" class="com.neza.message.SMUtil">
+		<property name="url">
+			<value><![CDATA[http://chineseserver.net:3388/CellServer/SmsAPI2/SendMessage.jsp]]></value>
+		</property>
+		<property name="username">
+			<value>7696</value>
+		</property>
+		<property name="password">
+			<value>an6xI54321</value>
+		</property>
+	</bean>
+
+	<bean id="MailUtil" class="com.neza.mail.MailUtil">
+		<property name="url">
+			<value><![CDATA[https://qm.qmpay.com/system/patternEmail.do]]></value>
+			<!--
+				<value><![CDATA[http://192.168.1.87:7080/fdpay/system/patternEmail.do]]></value>
+			-->
+		</property>
+	</bean>
+	<bean id="constant" class="com.neza.base.Constant">
+		<property name="localHost">
+			<value><![CDATA[https://www.qmpay.com]]></value>
+		</property>
+	</bean>
+
+	<bean id="fdconstant" class="com.fordays.fdpay.base.Constant">
+		<property name="url">
+			<list>
+				<value>agent.login</value>
+				<value>agent.forwardLogin</value>
+				<value>agent.toRegister</value>
+				<value>agent.register</value>
+				<value>agent.forgetPassword</value>
+				<value>agent.forgetPasswordNext</value>
+				<value>agent.setPassword</value>
+				<value>agent.setPayPassword</value>
+				<value>agent.registerActivate</value>
+				<value>agent.changePasswordQuestion</value>
+				<value>agent.sendEmailChangePasswordQuestion</value>
+				<value>agent.sendEmailChangePasswordCertNo</value>
+				<value>agent.validateQuestions</value>
+				<value>agent.validateCertNo</value>
+				<value>agent.activationLogin</value>
+				<value>agent.activateEmail</value>
+				<value>agent.sendactivationEmail</value>
+				<value>agent.changePasswordCertNo</value>
+				<value>agent.forgetPassword</value>
+				<value>agent.checkExist</value>
+				<value>agent.jumpTermFashion</value>
+				<value>agent.sendInfo</value>
+				<value>agent.getBackPassword</value>
+				<value>agent.getBackPayPassword</value>
+				<value>agent.validateCodeGetBack</value>
+				<value>agent.addAgentCoterie</value>
+				<value>agent.saveAgentCoterie</value>
+				<value>agent.ajxSendValidateCode</value>
+				<value>agent.listConterie</value>
+				<value>agent.activate</value>
+				<value>agent.bagentInfoById</value>
+				<value>agent.bagentInfoById</value>
+				<!-- direct payment or refund -->
+				<value>gateway.create_direct_pay_by_user</value>
+				<value>gateway.payment</value>
+				<value>gateway.refund_fastpay_by_platform_nopwd</value>
+				<value>gateway.fastpay_by_bank</value>
+				<value>gateway.direct_payment_by_bank</value>
+				<value>gateway.direct_payment_for_no_account</value>
+				<value>gateway.guarantee_payment_by_bank</value>
+				<value>gateway.get_agent_relationship</value>
+				<value>gateway.sign_protocol_with_partner</value>
+				<value>agent19pay.notice19payResult</value>
+				<value>gateway.get_credit_amount</value>
+				<value>gateway.auto_register</value>
+				<value>gateway.direct_change_agent_password</value>
+				<value>gateway.change_agent_password</value>
+				<value>gateway.set_password</value>
+				<value>gateway.set_pay_password</value>
+				<value>gateway.test_Url</value>
+				<!-- connector payment or refund -->
+				<value>connector.create_direct_guarantee_pay_by_user</value>
+				<value>connector.test_Url</value>
+				<value>security.interfaceChangePassword</value>
+				<value>certificate.proxyUrl</value>
+				<!-- agentbind -->
+				<value>agentBind.create_account_number</value>
+
+				<!-- bank result -->
+				<value>abcb2cResult</value>
+				<value>abcb2bResult</value>
+				<value>bcmb2cResult</value>
+				<value>bocb2cResult</value>
+				<value>ccbb2cResult</value>
+				<value>citicb2cResult</value>
+				<value>synccbb2cResult</value>
+				<value>cmbcb2cResult</value>				
+				<value>cmbcChinaPayResult</value>
+				<value>icbcb2cResult</value>
+				<value>icbcb2bResult</value>
+				<value>cmbb2cResult</value>
+				
+				<!-- 商户订单查询 -->
+				<value>queryOrder</value>
+				<!-- news result -->
+				<value>newslist.list</value>
+				<value>newslist.showNews</value>
+				<!--  -->
+				<value>agent19pay.payI</value>
+				<value>agent19pay.processOrderI</value>
+				<!-- transaction -->
+				<value>transaction.transactionPaymentI</value>
+				<value>transaction.transactionPaymentReturnByBank</value>
+				<!-- test -->
+				<value>receive</value>
+				<value>charge.waitChargeI</value>
+				<value>charge.sendToBank</value>
+				<value>transaction.transactionGatherRedPacketByEmail</value>
+			</list>
+		</property>
+		<property name="certUrl">
+			<list>
+				<value>agent.login</value>
+				<value>transaction.addTransactionSeller</value><!-- 担保交易收款  即时到账收款-->
+				<value>transaction.addBatchCollect</value><!-- 批量收款 -->
+				<value>transaction.addDebit</value><!-- 预支 -->
+				<value>transactionlist.getExpenseList</value><!-- 报销 -->
+				<value>transaction.paySave</value><!-- 即时到账付款 -->
+				<value>transaction.addBatchPayment</value><!-- 批量付款 -->
+				<value>transaction.addTransactionBorrowing</value><!-- 借款/还款  -->
+				<value>transaction.creditRepayment</value><!-- 授信还款 -->
+				<value>agentUser.viewAgentUsers</value><!-- 操作员管理 -->
+				<value>draw.addDraw</value><!-- 提现 -->
+				<value>agentlist.listContact</value><!-- 管理联系人 -->
+				<value>agent.tochangeBindBank</value><!-- 修改绑定的银行卡号 -->
+				<value>agent.removeBankByAgent</value><!-- 删除银行卡 -->
+				<value>security.changePassword</value><!-- 修改密码 -->
+				<value>security.changePayPassword</value><!-- 修改支付密码 -->
+				<value>security.downloadImg</value>
+				<value>agent.unbindingMobile</value><!-- 解除绑定的手机 -->
+				<value>agent.unbindingMobileValidate</value><!-- 解除绑定的手机 -->
+				<value>agent.unBindingMobileQuestion</value><!-- 解除绑定的手机 -->
+				<value>agent.unBindingMobileValidateQuestion</value><!-- 解除绑定的手机 -->
+				<value>agent.viewPayBalance</value><!-- 开启/关闭 余额支付 -->
+				<value>agent.closePayBalance</value><!-- 关闭余额支付 -->
+				<value>agent.startupPayBalance</value><!-- 开启余额支付 -->
+				<value>agent.startupPayBalanceValidate</value><!-- 开启余额支付 -->
+				<value>agent.editTelephone</value><!-- 修改联系电话 -->
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="theFilter" class="com.neza.filters.SetCharacterEncodingFilter">
+		<property name="urls">
+			<list>
+				<value>/cooperate/gateway.do</value>
+				<value>/cooperate/credit.do</value>
+				<value>/bank/icbcb2bResult.do</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<!--
+		<bean id="jmailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host"> <value>smtp.163.com</value> </property>
+		<property name="javaMailProperties"> <props> <prop
+		key="mail.smtp.host">smtp.163.com</prop> <prop
+		key="mail.smtp.auth">true</prop> <prop
+		key="mail.smtp.timeout">25000</prop> </props> </property> <property
+		name="username"> <value>xujingru1985</value> </property> <property
+		name="password"> <value>love5201314</value> </property> </bean>
+	-->
+
+	<bean id="jmailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host">
+			<value>smtp.qiye.163.com</value>
+		</property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.host">smtp.qiye.163.com</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.timeout">25000</prop>
+			</props>
+		</property>
+		<property name="username">
+			<value>qmpay@qmpay.com</value>
+		</property>
+		<property name="password">
+			<value>Fdays12345</value>
+		</property>
+	</bean>
+
+	<bean id="taskJobScheduler" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+		<property name="jobDetail">
+			<ref bean="taskJob" />
+		</property>
+		<property name="startDelay">
+			<value>1000</value>
+		</property>
+		<property name="repeatInterval">
+			<value>900000</value>
+		</property>
+	</bean>
+
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="autoStartup">
+			<value>true</value>
+		</property>
+
+		<property name="triggers">
+			<list>
+				<ref bean="taskJobScheduler" />
+			</list>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,892 @@
+div.FloatHelp div {
+	top: -15px;
+}
+
+ul.skipto {
+	list-style-type: none;;
+	margin: 0 auto;;
+	padding: 0;;
+	width: 882px;
+}
+
+ul.skipto .notice {
+	background: #EEF;;
+	border: 1px solid #CCE;;
+	color: #000;;
+	margin: 0 auto;;
+	padding: 10px;;
+	width: 80%;
+}
+
+ul.skipto .notice p,ul.skipto .notice_R p {
+	background: url(../_img/info_16.png)
+		#FFF 12px -291px no-repeat;;
+	display: block;;
+	font-size: 12px;;
+	line-height: 20px;;
+	margin: 0;;
+	padding: 8px;;
+	padding-left: 36px;;
+	text-indent: 0;
+}
+
+ul.skipto .notice_R {
+	background: #FFF6F0;;
+	border: 1px solid #F96;;
+	margin: 0 auto;;
+	padding: 10px;;
+	width: 80%;
+}
+
+ul.skipto .notice_R p {
+	background-image:
+		url(../_img/info_16.png) no-repeat;
+}
+
+ul.skipto li {
+	float: left;;
+	height: 318px;;
+	margin-right: 20px;;
+	position: relative;;
+	width: 279px;
+}
+
+ul.skipto li h3 {
+	border: 0;;
+	display: block;;
+	margin: 19px 0 0 0;;
+	padding: 0;;
+	position: relative;;
+	text-align: left;
+}
+
+ul.skipto li h3 a {
+	display: block;;
+	height: 32px;;
+	left: 0;;
+	margin-left: 15px;;
+	text-decoration: none;;
+	text-indent: -9999px;;
+	top: 0;;
+	width: 240px;
+}
+
+ul.skipto li p {
+	color: #000;;
+	font-size: 14px;;
+	line-height: 26px;;
+	margin: 0;;
+	padding: 10px 15px;;
+	text-align: left;;
+	text-indent: 28px;
+}
+
+ul.skipto li.gathering_aa {
+	background:
+		url(../_img/pan_aa.png)
+		no-repeat 0 -320px;;
+	margin-right: 0;
+}
+
+ul.skipto li.gathering_aa h3 a {
+	background: url(../_img/h3.png) 7px -164px
+		no-repeat;
+}
+
+ul.skipto li.gathering_aa_on {
+	background:
+		url(../_img/pan_aa.png)
+		no-repeat 0 0;;
+	margin-right: 0;
+}
+
+ul.skipto li.gathering_aa_on h3 a {
+	background: url(../_img/h3.png) 7px -199px
+		no-repeat;
+}
+
+ul.skipto li.gathering_dun h3 a {
+	background: url(../_img/h3.png) 2px 1px
+		no-repeat;
+}
+
+ul.skipto li.gathering_dun,ul.skipto li.pay_dun {
+	background:
+		url(../_img/pan_shield.png)
+		no-repeat 0 -320px;
+}
+
+ul.skipto li.gathering_dun_on {
+	background:
+		url(../_img/pan_shield.png)
+		no-repeat;
+}
+
+ul.skipto li.gathering_dun_on h3 a {
+	background: url(../_img/h3.png) 2px -38px
+		no-repeat;
+}
+
+ul.skipto li.gathering_fastpay {
+	background:
+		url(../_img/pan_fastpay.png)
+		no-repeat 0 -319px;
+}
+
+ul.skipto li.gathering_fastpay h3 a {
+	background: url(../_img/h3.png) 1px -79px
+		no-repeat;
+}
+
+ul.skipto li.gathering_fastpay_on .notice p,ul.skipto li.gathering_dun_on .notice p,ul.skipto li.gathering_aa_on .notice p,ul.skipto li.gathering_fastpay_on .notice_R p,ul.skipto li.gathering_dun_on .notice_R p,ul.skipto li.gathering_aa_on .notice_R p,ul.skipto li.pay_fastpay_on .notice p,ul.skipto li.pay_dun_on .notice p,ul.skipto li.gathering_batch_on .notice p,ul.skipto li.pay_fastpay_on .notice_R p,ul.skipto li.pay_dun_on .notice_R p,ul.skipto li.gathering_batch_on .notice_R p,ul.skipto li.gathering_fastpay_on p,ul.skipto li.gathering_dun_on p,ul.skipto li.gathering_aa_on p,ul.skipto li.pay_dun_on p,ul.skipto li.pay_fastpay_on p,ul.skipto li.pay_batch_on p
+	{
+	color: #000;
+}
+
+ul.skipto li.gathering_fastpay_on h3 a {
+	background: url(../_img/h3.png) 1px -119px
+		no-repeat;
+}
+
+ul.skipto li.gathering_fastpay_on,ul.skipto li.gathering_dun_on,ul.skipto li.gathering_aa_on,ul.skipto li.pay_dun_on,ul.skipto li.pay_fastpay_on,ul.skipto li.pay_batch_on
+	{
+	cursor: pointer;;
+	position: relative;
+}
+
+ul.skipto li.gathering_fastpay_on,ul.skipto li.pay_fastpay_on {
+	background:
+		url(../_img/pan_fastpay.png)
+		no-repeat;
+}
+
+ul.skipto li.pay_batch,ul.skipto li.refund_batch,ul.skipto li.refund_pay
+	{
+	background:
+		url(../_img/pan_fastpay.png)
+		no-repeat 0 -319px;;
+	margin-right: 0;
+}
+
+ul.skipto li.pay_batch h3 a {
+	background: url(../_img/h3.png) 1px -239px
+		no-repeat;
+}
+
+ul.skipto li.pay_batch_on,ul.skipto li.refund_batch_on,ul.skipto li.refund_pay_on
+	{
+	background:
+		url(../_img/pan_fastpay.png)
+		no-repeat 0 0;;
+	margin-right: 0;
+}
+
+ul.skipto li.pay_batch_on h3 a {
+	background: url(../_img/h3.png) 1px -279px
+		no-repeat;
+}
+
+ul.skipto li.refund_batch h3 a {
+	background: url(../_img/h3.png) 1px -557px
+		no-repeat;
+}
+
+ul.skipto li.refund_batch_on h3 a {
+	background: url(../_img/h3.png) 1px -597px
+		no-repeat;
+}
+
+ul.skipto li.refund_pay h3 a {
+	background: url(../_img/h3.png) 1px -477px
+		no-repeat;
+}
+
+ul.skipto li.refund_pay_on h3 a {
+	background: url(../_img/h3.png) 1px -517px
+		no-repeat;
+}
+
+ul.skipto li.pay_dun h3 a {
+	background: url(../_img/h3.png) 1px -318px
+		no-repeat;
+}
+
+ul.skipto li.pay_dun_on {
+	background: url(../_img/Pay_pic_dun.jpg);
+}
+
+ul.skipto li.pay_dun_on h3 a {
+	background: url(../_img/h3.png) 1px -358px
+		no-repeat;
+}
+
+ul.skipto li.pay_fastpay {
+	background:
+		url(../_img/Gathering_pic_fastpay_off.jpg)
+		no-repeat;
+}
+
+ul.skipto li.pay_fastpay h3 a {
+	background: url(../_img/h3.png) 1px -398px
+		no-repeat;
+}
+
+ul.skipto li.pay_fastpay_on h3 a {
+	background: url(../_img/h3.png) 1px -438px
+		no-repeat;
+}
+
+.FloatHelp {
+	position: relative;;
+	z-index: 1;
+}
+
+.FloatHelp div {
+	background:
+		url(../_img/pan_pan_floatnote.png)
+		no-repeat 0 -230px;;
+	display: none;;
+	height: 55px;;
+	left: -35px;;
+	position: absolute;;
+	text-align: left;;
+	top: 16px;;
+	width: 232px;
+}
+
+.FloatHelp div p {
+	clolor: #444;;
+	font-size: 12px;;
+	line-height: 18px;;
+	margin: 0;;
+	padding-left: 30px;;
+	padding-top: 14px;
+}
+
+.FloatHelp div.FloatCenter {
+	background:
+		url(../_img/pan_pan_floatnote.png)
+		no-repeat 0 -330px;;
+	display: none;;
+	height: 55px;;
+	left: -35px;;
+	position: absolute;;
+	text-align: left;;
+	top: 16px;;
+	width: 232px;
+}
+
+.GrayButton {
+	color: #039;;
+	font-size: 12px;;
+	height: 30px;;
+	margin-left: 120px;;
+	padding-right: 10px;
+}
+
+.GrayButton a {
+	color: #000;;
+	display: block;;
+	font-size: 14px;;
+	height: 20px;;
+	left: 85px;;
+	padding-bottom: 2px;;
+	padding-top: 8px;;
+	position: absolute;;
+	text-align: center;;
+	text-decoration: none;;
+	top: 275px;;
+	width: 111px;
+}
+
+.GrayButton a:link,.GrayButton a:Visited {
+	background:
+		url(../_img/btnTmp_gray.png)
+		no-repeat 0 -367px;;
+	color: #000;
+}
+
+.GrayButton a:hover,.GrayButton a:active {
+	color: #F60;;
+	font-size: 14px;;
+	text-align: center;
+}
+
+.StandardPage {
+	font-size: 12px;;
+	line-height: 20px;;
+	margin: 0 auto;;
+	padding: 8px;;
+	text-align: center;
+}
+
+.StandardPage span {
+	color: #F60;;
+	font-weight: bold;
+}
+
+.StandardTable {
+	border: 1px solid #A9A9A9;;
+	clear: both;;
+	margin: 0 auto;;
+	width: 760px;
+}
+
+.StandardTable {
+	border: 0;
+}
+
+.StandardTable .aligncenter {
+	text-align: center;
+}
+
+.StandardTable .alignleft {
+	text-align: left;
+}
+
+.StandardTable .alignright {
+	text-align: right;
+}
+
+.StandardTable caption {
+	border-bottom: 2px solid #FC943E;;
+	font-size: 12px;;
+	margin: 0 auto;;
+	padding: 0;;
+	text-align: left;
+}
+
+.StandardTable caption.title {
+	font-size: 14px;;
+	font-weight: bold;;
+	padding: 10px;
+}
+
+.StandardTable em {
+	color: #999;;
+	font-style: normal;
+}
+
+.StandardTable strong {
+	color: #FF7300;;
+	font-weight: normal;
+}
+
+.StandardTable td {
+	border-bottom: #E2E2E2 1px solid;;
+	border-right: #EEE 1px solid;;
+	border-top: #FFF 2px solid;;
+	color: #000;;
+	font-size: 12px;;
+	line-height: 150%;;
+	padding: 6px 4px 6px;
+}
+
+.StandardTable td {
+	vertical-align: top;;
+	word-break: break-all;;
+	word-wrap: break-word;
+}
+
+.StandardTable th {
+	background: #EEE;;
+	border-bottom: #E2E2E2 1px solid;;
+	border-right: #FFF 1px solid;;
+	border-top: #FFF 1px solid;;
+	color: #666;;
+	font-size: 12px;;
+	font-weight: normal;;
+	padding: 6px 4px 2px;;
+	white-space: nowrap;
+}
+
+.StandardTable tr.tab td {
+	background-color: #F7F7F7;
+}
+
+.StandardTable ul.StandardTableTab {
+	float: right;;
+	font-size: 12px;;
+	list-style-type: none;;
+	margin: 0;;
+	padding: 0;;
+	width: 40%;
+}
+
+.StandardTable ul.StandardTableTab li {
+	float: right;;
+	height: 30px;;
+	margin-right: 3px;;
+	padding: 0;;
+	padding-top: 10px;
+}
+
+.StandardTable ul.StandardTableTab li span {
+	color: #C3C3C3;;
+	padding: 0 5px;
+}
+
+.StandardTable ul.StandardTableTab li#StandardTableTabselected {
+	background: url(../img/layout/StandardTableTab_selected.gif) center 0
+		no-repeat;;
+	margin-right: 3px;;
+	padding-top: 10px;
+}
+
+.StandardTable ul.StandardTableTab li#StandardTableTabselected a,.StandardTable ul.StandardTableTab li#StandardTableTabselected a:link
+	{
+	color: #FF7300;;
+	padding: 0;;
+	white-space: nowrap;
+}
+
+.StandardTable ul.StandardTableTab li#StandardTableTabselected a:hover {
+	color: #F60;
+}
+
+.TotalContract {
+	padding: 10px;;
+	padding-right: 50px;;
+	text-align: right;
+}
+
+.Want_do {
+	background: url(../_img/icon_action.gif) #FFF
+		68% 1% no-repeat;;
+	height: 20px;;
+	margin: 15px auto;;
+	text-align: right;;
+	width: 760px;
+}
+
+#contactListDiv {
+	border-top: 1px solid #CCC;;
+	list-style-type: none;;
+	margin: 1px 1px 0 1px;;
+	padding: 10px;
+}
+
+#contactListDiv li {
+	float: left;;
+	line-height: 20px;;
+	width: 50%;
+}
+
+#contactListDiv ul {
+	padding-bottom: 20px;;
+	list-style-type: none;
+}
+
+#contract {
+	border: 1px solid #A5ADB2;;
+	margin: 0 25px 25px 183px;
+}
+
+#contract .contract_title {
+	background: #FFF4D6;;
+	padding: 10px 20px;
+}
+
+#contract .contract_title h5 {
+	float: left;;
+	font-size: 14px;;
+	margin-right: 20px;
+}
+
+#contract .contract_title h5 span {
+	font-weight: normal;
+}
+
+#contract li a {
+	display: inline;
+}
+
+#contract li span {
+	display: inline-block;;
+	color: #999;;
+	text-decoration: none;
+}
+
+#contract li a:hover {
+	background: #FFF4D6;
+}
+
+#SelectContract {
+	margin: 0 auto;;
+	width: 830px;
+}
+
+#SelectContract #contactListDiv {
+	height: 235px;;
+	overflow: auto;;
+	overflow-x: hidden;
+}
+
+#SelectContract #contract {
+	float: left;;
+	height: 335px;;
+	margin: 0;;
+	width: 200px;
+}
+
+#SelectContract #contract .contract_title {
+	padding: 5px;
+}
+
+#SelectContract #contract .contract_title select {
+	margin: 5px 0;
+}
+
+#SelectContract #contract li {
+	line-height: 16px;;
+	padding-bottom: 5px;;
+	text-align: left;;
+	clear: both;;
+	width: 160px;
+}
+
+#SelectContract #contract ul {
+	margin: 0;;
+	padding: 0;
+}
+
+#SelectContract .Col3dCenter {
+	padding-top: 150px;;
+	text-align: center;;
+	width: 10px;
+}
+
+#SelectList {
+	border: 1px solid #A9A9A9;;
+	height: 335px;;
+	overflow-y: auto;;
+	width: 790px;
+}
+
+#SelectList *,#contract *,.StandardTable select,.StandardTable input {
+	font-size: 12px;
+}
+
+#Tab_Two .GrayButton a {
+	left: 235px;
+}
+
+#Tab_Two ul.skipto li {
+	margin-right: 10px;;
+	width: 368px;
+}
+
+#Tab_Two ul.skipto li.pay_fastpay,#Tab_Two ul.skipto li.pay_fastpay_on {
+	margin-left: 10px;;
+	margin-right: 0;
+}
+
+#tableinterdouce {
+	border: 0;;
+	font-size: 14px;;
+	padding-top: 110px;;
+	text-align: center;
+}
+
+#TradeManage {
+	margin: 0 auto;;
+	width: 950px;
+}
+
+#TradeManage_Content table {
+	border: 0;;
+	border-bottom: 1px solid #CCC;;
+	margin: 2px auto 10px auto;;
+	padding: 0;;
+	width: 100%;
+}
+
+#TradeManage_Content td {
+	border: 1px solid #FFF;;
+	border-width: 1px 0;;
+	font-size: 12px;;
+	padding: 8px 6px;
+}
+
+#TradeManage_Content td.txtNextPage {
+	font-size: 14px;;
+	text-align: right;
+}
+
+#TradeManage_Content th {
+	background: none;;
+	border-bottom: 1px solid #CCC;;
+	color: #AAA;;
+	font-size: 12px;;
+	font-weight: normal;;
+	padding: 3px 6px;
+}
+
+#TradeManage_Content tr.change td {
+	background-color: #F8FAFD;;
+	border: 1px solid #E4E8EF;;
+	border-width: 1px 0;
+}
+
+#TradeManage_Content tr.over td {
+	background-color: #FFF7D2;;
+	border: 1px solid #FFE59D;;
+	border-width: 1px 0;
+}
+
+#TradeManage_Type {
+	background:
+		url(../_img/vertical.png) 0
+		-630px repeat-x;;
+	height: 32px;
+}
+
+#TradeManage_Type li {
+	float: left;
+}
+
+#TradeManage_Type li select {
+	font-size: 12px;;
+	vertical-align: -2px;
+}
+
+#TradeManage_Type li.none {
+	border-left: 0;;
+	margin: 3px 0;
+}
+
+.FastPay .left {
+	background:
+		url(../_img/bg_fastpayLogo.png)
+		#FFF no-repeat;;
+	height: 320px;;
+	color: #AAA;;
+	font-size: 12px;;
+	position: relative;;
+	float: left;;
+	width: 280px;;
+	padding-left: 50px;
+}
+
+.FastPay .right {
+	float: right;;
+	text-align: left;;
+	width: 500px;;
+	background-color: #FFF;;
+	padding-right: 50px;
+}
+
+.FastPay .trade_type {
+	position: absolute;;
+	top: 250px;;
+	left: 150px;;
+	width: 130px;;
+	text-align: left;
+}
+
+.FastPay h2 {
+	border-bottom: 2px solid #EEE;;
+	padding-bottom: 10px;
+}
+
+.FastPay .FastPay_content {
+	background:
+		url(../_img/vertical.png) #FFF
+		repeat-x 0 -220px;;
+	height: 252px;;
+	padding: 10px 20px;;
+	line-height: 24px;;
+	margin-top: -19px;
+}
+
+.TradePay .left {
+	background:
+		url(../_img/bg_payLogo.png) #FFF
+		no-repeat;;
+	height: 320px;;
+	color: #AAA;;
+	font-size: 12px;;
+	position: relative;;
+	float: left;;
+	width: 280px;;
+	padding-left: 50px;
+}
+
+.TradePay .right {
+	float: right;;
+	text-align: left;;
+	width: 500px;;
+	background-color: #FFF;;
+	padding-right: 50px;
+}
+
+.TradePay .trade_type {
+	position: absolute;;
+	top: 250px;;
+	left: 150px;;
+	width: 130px;;
+	text-align: left;
+}
+
+.TradePay h2 {
+	border-bottom: 2px solid #EEE;;
+	padding-bottom: 10px;
+}
+
+.TradePay .FastPay_content {
+	background:
+		url(../_img/vertical.png) #FFF
+		repeat-x 0 -220px;;
+	height: 252px;;
+	padding: 10px 20px;;
+	line-height: 24px;;
+	margin-top: -19px;
+}
+
+#paynote {
+	line-height: 160%;
+}
+
+#paynote span {
+	color: #717171;;
+	font-weight: bold;
+}
+
+.firsuse {
+	text-indent: 1em;;
+	float: left;;
+	line-height: 32px;;
+	color: #333;
+}
+
+.firsuse span,.firsuse a {
+	float: left;
+}
+
+.firsuse a.help {
+	background: url(../_img/icon_16.png)
+		no-repeat 0 -169px;;
+	text-indent: 20px;;
+	display: block;;
+	height: 20px;;
+	line-height: 150%;;
+	color: #00ad13;;
+	margin-left: 5px;;
+	margin-top: 6px;
+}
+
+#nocert {
+	text-indent: 1em;;
+	background: url(../_img/icon_16.png)
+		no-repeat 1em -190px;;
+	text-indent: 35px;;
+	clear: both;;
+	line-height: 160%;;
+	color: #f26522;
+}
+
+#nocert a {
+	background: url(../_img/icon_16.png)
+		no-repeat 0 -340px;;
+	padding-left: 20px;
+}
+
+#active,#noactive {
+	list-style: none;;
+	height: 117px;;
+	margin: 10px 0 10px 16px;;
+	padding: 0;;
+	clear: both;
+}
+
+#active li,#noactive li {
+	width: 213px;;
+	height: 117px;;
+	padding-left: 33px;;
+	background:
+		url(../_img/pan_paynote.png)
+		right -264px;;
+	float: left;
+}
+
+#active li.head,#noactive li.head {
+	padding: 0;;
+	background:
+		url(../_img/pan_paynote.png)
+		right 0 no-repeat;
+}
+
+#noactive li {
+	background:
+		url(../_img/pan_paynote.png)
+		right -399px no-repeat;
+}
+
+#noactive li.head {
+	background:
+		url(../_img/pan_paynote.png)
+		right -133px no-repeat;
+}
+
+#active h5,#noactive h5 {
+	witdh: 213px;;
+	text-align: center;;
+	font-size: 15px;;
+	margin: 18px 0 0 0;
+}
+
+#noactive h5 {
+	color: #4e4e4e;;
+	text-decoration: underline;
+}
+
+#active p,#noactive p {
+	width: 170px;;
+	margin: auto;;
+	margin-top: 10px;;
+	line-height: 150%;
+}
+
+a.downloadTmp {
+	display: block;;
+	width: 131px;;
+	height: 36px;;
+	background:
+		url(../_img/btn_payTmp.gif) 0 0
+		no-repeat;;
+	text-decoration: none;
+}
+
+a.downloadTmp:hover {
+	background:
+		url(../_img/btn_payTmp.gif) 0
+		-46px no-repeat;
+}
+
+a.downloadTmp span {
+	display: none;
+}
+
+.downTemp,.downTemp02 {
+	margin-top: -5px; *
+	margin-top: 0;;
+	display: block;;
+	float: left;;
+	width: 130px;;
+	height: 36px;;
+	background:
+		url(../_img/btn_payTmp.jpg) 0 0
+		no-repeat;;
+	padding-left: 114px;
+}
+
+.downTemp02 {
+	background:
+		url(../_img/btn_payTmp02.jpg) 0
+		0 no-repeat;
+}
+
+.downTemp a,.downTemp02 a {
+	word-wrap: normal;;
+	word-break: keep-all;
+}

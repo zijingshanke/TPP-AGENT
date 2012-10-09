@@ -1,0 +1,17 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by ccggyy2002 (Delphi) -->
+
+<struts-config>
+	<form-beans>
+
+		<form-bean name="uploadForm"
+			type="com.fordays.fdpay.upload.UploadForm" />
+	</form-beans>
+	<action-mappings>
+		<action name="uploadForm" parameter="thisAction"
+			type="com.fordays.fdpay.upload.UploadAction"
+			path="/upload/upload" validate="false" scope="request">		
+			<forward name="editattachpage" path="/page/editAttach.jsp"></forward>	
+		</action>
+	</action-mappings>
+</struts-config>

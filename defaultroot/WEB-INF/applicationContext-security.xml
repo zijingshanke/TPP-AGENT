@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="false" default-autowire="no"
+	default-dependency-check="none">
+
+	<bean id="certInfoBiz" class="com.fordays.fdpay.security.biz.CertInfoBizImpl">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="agentDAO">
+			<ref bean="agentDAO" />
+		</property>
+		<property name="certInfoDAO">
+			<ref bean="certInfoDAO" />
+		</property>
+	</bean>
+	
+	<bean id="certInfoDAO" class="com.fordays.fdpay.agent.dao.CertInfoDAOImpl"
+		lazy-init="default" autowire="default" dependency-check="default">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean name="/security/certificate" class="com.fordays.fdpay.security.action.CertificateAction"
+		singleton="false" lazy-init="default" autowire="default"
+		dependency-check="default">
+		<property name="certInfoBiz">
+			<ref bean="certInfoBiz" />
+		</property>
+    </bean>
+
+	
+</beans>

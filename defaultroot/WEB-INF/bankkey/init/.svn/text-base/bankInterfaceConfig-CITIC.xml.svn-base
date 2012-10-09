@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BANK>
+	<!-- 中信银行接口配置 -->
+	<CITIC>
+		<!-- B2C接口 -->
+		<B2C>
+			<!-- 第三方支付平台编号 -->
+			<E3RDPAYNO>100020</E3RDPAYNO>
+			<!-- 订单支付模式 -->
+			<ORDERMODE>01</ORDERMODE>
+			<!-- 支付币种 -->
+			<CURRID>01</CURRID>
+			<!-- 摘要 -->
+			<MEMO>钱门在线支付</MEMO>
+			<!-- 通知模式01：浏览器URL跳转通知 目前固定送01 -->
+			<NOTIFYMODE>01</NOTIFYMODE>
+			<!-- 通知地址：测试 -->
+			<!--<NOTIFYURL>http://219.131.194.194/fdpay-client/bank/citicb2cResult.do</NOTIFYURL>-->	
+			<!-- 通知地址：生产环境 -->
+			<NOTIFYURL>https://www.qmpay.com/bank/citicb2cResult.do</NOTIFYURL>		
+			
+			<!--风险级别 订单风险级别：业务开通时设定
+				00:系统默认级别
+				01:大额网关级别-->
+			<RISKLEVEL>00</RISKLEVEL>
+			<!--支持卡种:商户设定 
+				00- 借记卡和信用卡
+				01- 仅借记卡
+				02- 仅信用卡-->
+			<SUPPTCARDTYPE>00</SUPPTCARDTYPE>
+
+			<!--  测试环境为ec.test.bank.ecitic.com-->
+			<!--<interfacePath>https://ec.test.bank.ecitic.com/pec/e3rdplaceorder.do</interfacePath>-->
+			<!--  生产环境为b2c.bank.ecitic.com-->
+			<interfacePath>https://b2c.bank.ecitic.com/pec/e3rdplaceorder.do</interfacePath>
+
+
+			<!-- 签名组件配置 -->
+			<signCert>bankkey/citic/cert/ecclient.cer</signCert>
+			<privateKey>bankkey/citic/cert/ecclient.key</privateKey>
+			<keyPassword>bankkey/citic/cert/ecclient.pwd</keyPassword>
+			
+			<!-- 验证签名组件配置 -->
+
+			<!-- 信任证书:测试环境 -->
+			<!--<trustedCrt>MIIDYzCCAkugAwIBAgIBMDANBgkqhkiG9w0BAQUFADBMMSwwKgYDVQQKDCNDSElOQSBDSVRJQyBCQU5LIENPUlBPUkFUSU9OIExJTUlURTEcMBoGA1UEAwwTQ05DQiBFQyBURVNUIFNFUlZFUjAeFw0wOTA1MjAxMTA3NDhaFw0yOTA1MTUxMTA3NDhaMEwxLDAqBgNVBAoMI0NISU5BIENJVElDIEJBTksgQ09SUE9SQVRJT04gTElNSVRFMRwwGgYDVQQDDBNDTkNCIEVDIFRFU1QgU0VSVkVSMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx66DA5hrSuSmYj/s6dbiexVSGqswPJbo7JdDDRuyFvZYmejdJBRt0wq1TfTgxVn++sEKByOOYGgZebpOM3/mRfz9QoRm8YqMP5HXHQSNyLnUJ4JfxT5XkFRIC7Gk3eKZmv+fVxRSc09zgsGrS45MgJlQdOo3Ckv1NgV4lBDqHK0EkKthVasQ6tAD5sVQLGHodanwnYa+/4VswHnfpj7z0n6rV1zP4ZAJATNyVOSNRZK2/q7Mf61ypAXKSLTDA/ijnZor7uFMKQsU/V+elK3TeZHG+KZ3pYiG8d0ZDNVjb66Zc4JWuM613uZntt1grI1BRMjIOc2H2Lmp9lx8bJLbeQIDAQABo1AwTjAdBgNVHQ4EFgQUT0mNmQzHwVOFbRJ7dIySrHx0HJUwHwYDVR0jBBgwFoAUT0mNmQzHwVOFbRJ7dIySrHx0HJUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAb+bHgKuswiOdfGpGrw/UttBrwccfBzHo9N/5UYvdoAuchAA893GhQeTXjE1xycfqv3fvRulnnvB8EjwCYfFknxNL9bRwDqK0SpqtyC36h9o0Z8BgItfeehmnYzgtuUnkutyscX2bPj8SmILA5t88cUJYpAPZKvM7QlX6ClM3OCyVxnmYEJmNbXiG7Q+SxtWakPC9pK2OFzeRJGitDBypE/NusbCOqIcaSbqoLl/EuGkpDZPtNlIAtzn8j3cauCeEu4wxDZmGU7oHFPYpeXTzAuqU4sQNHUKJR2ooORdUIROASQitybY5JxaIM0GHQJCJVWH2U280pRr28nlOK02Wgw==</trustedCrt>-->
+			<!-- 信任证书:生产环境-->
+			<trustedCrt>MIIDWTCCAkGgAwIBAgIBMDANBgkqhkiG9w0BAQUFADBHMSwwKgYDVQQKDCNDSElOQSBDSVRJQyBCQU5LIENPUlBPUkFUSU9OIExJTUlURTEXMBUGA1UEAwwOQ05DQiBFQyBTRVJWRVIwHhcNMDkwNzAxMDE0MTA3WhcNMjkwNjI2MDE0MTA3WjBHMSwwKgYDVQQKDCNDSElOQSBDSVRJQyBCQU5LIENPUlBPUkFUSU9OIExJTUlURTEXMBUGA1UEAwwOQ05DQiBFQyBTRVJWRVIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCwqqPy6qm2hh2d/XN5tVy/F5FyRrK1mcPma1b2LFRS6AyfMGJUCusXimH0Njr7MBTx/Goorc/LHS1cm7f86jrckWfxRORDSw3D9VpxzhRCokfNAFIJYy7w6SGlXFpfoCkL6eEM5DK7gfFxqyKRPQ/GgetxwJLXmtVVPLKNzK3VAqlW6TNN26ejs4UkS84Lz+STHYDOfY1ch9qi43rrqfmjTZrJJZZi3LLw8jRS2ykrdrnbBeXGXA2tB3dmKgEN551EfwlEbWunWjRdNKnsweiQtcEAs8p7DyJOf8kSK4PLqRS9ZXWeCwhnJw7pP9Wq66PZ1wsK/zr1fAIg0pMT6DYrAgMBAAGjUDBOMB0GA1UdDgQWBBRKyWl9WKCCTTm7151HcedbZRHa5TAfBgNVHSMEGDAWgBRKyWl9WKCCTTm7151HcedbZRHa5TAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQCaMtcypAhwgrHT6K6YC/C8r0bzPcWjNiU973OczQHQpq0IbaPbeQ1/21iaEejWtFcZ4z1zHosG04pd2abgzXkGRRlwNd55KJAGGEl/p87ygfugTh44pcWC2j/Fqv3vo9gtqtIpUaJlu9Pe2XO8W9P+Z+19ZjgLljjDhOh01ddjjzQWa3es2lop2d0jWMrVPHI8bv0AJo5diMNaxZ0E+13X2RWdXrCvrNMj6eqSuvpKtCAASiGakNHq4rdnJ06bq2pu7X0+P52EPpns0VKjULCKba/rExp4vLCANPFe0kQ1MDlHqahBc4QlOUtKnB/Gh14wK6cwhJzXUjjJZ3LQKJUP</trustedCrt>
+		</B2C>
+	</CITIC>
+</BANK>

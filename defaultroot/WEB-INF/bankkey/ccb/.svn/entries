@@ -1,0 +1,34 @@
+9
+
+dir
+5
+svn://localhost/fdpay-client/defaultroot/WEB-INF/bankkey/ccb
+svn://localhost/fdpay-client
+
+
+
+2011-08-16T02:34:55.921875Z
+1
+kums
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+364e0aaf-3b4c-864d-aa8b-c3966a171733
+
+b2b
+dir
+
+b2c
+dir
+

@@ -1,0 +1,92 @@
+body { background-color: #FFFFFF; margin: 0 auto 0 auto; }
+a:link, a:visited{ color: #004080; }
+a:hover,a:active { color: #ff0000; }
+.bodyTop { font-size: 10px; height: 10px; line-height: 10px; }
+#topNav { float:right; height: 49px; margin-top:16px; text-align: right; width:840px; }
+#topNavLeft { float: left; height: 48px; line-height:24px; width:585px;}
+#topNavRight { float: right; height: 39px; padding-top:9px; text-align: right; vertical-align: middle; width: 143px; }
+.goIndexT {height:28px; font-size:0; line-height:0; clear:both; overflow:hidden;}
+.goIndex a{ display:block; width:110px; height:20px; }
+#header {height: 85px; margin:auto; width: 940px;}
+
+div, form ,ul{ margin:0; padding:0;}
+
+#wrapper{ text-align: left; margin: 0 auto; width: 950px; }
+#content { width:950px; }
+.now{background:#FFF4C2;}
+/*index*/
+/*category*/
+.contentLeft{ float:left; width:182px; font-size:12px;}
+.contentRight{width:758px; float:right; word-wrap: break-word; /* IE */}
+/*left*/
+.changehelp{ background:url(../_img/help/bg_o.gif) repeat-x; border:1px solid #D3D3D3;}
+.changenow{ background:url(../_img/help/bg_y.gif) repeat-x; border:1px solid #D3D3D3;}
+.changehelp span , .changenow span{ padding-left:25px; background:url(../_img/help/plus.gif) no-repeat 8px 8px; font-size:14px; font-weight:bold; color:#000; line-height:28px; height:28px; cursor:pointer; display:block;}
+.changenow span{ background:url(../_img/help/decrease.gif) no-repeat 8px 8px; color:#FFF;}
+
+.menu {background:#ffffff; border:1px solid #D3D3D3; border-width:0 1px 1px 1px; font-size:14px; font-weight:bold;}
+.menu ul {list-style-type:none;width:180px; z-index:1;}
+.menu li {position:relative; z-index:0; border-top:1px solid #FFE285;}
+.menu table {position:absolute; border-collapse:collapse; top:0; left:0; z-index:900;}
+.menu a, .menu a:visited { padding-left:25px;display:block; text-decoration:none;height:28px;line-height:28px;width:155px;color:#2960AF;}
+.menu ul li a:hover,.menu ul li a:active{background:#FFFFD8;color:#004080;line-height:26px; height:26px; top:0; }
+.menu ul ul {visibility:hidden;position:absolute; left:180px; top:-1px; _top:0; font-size:12px; font-weight:normal; z-index:900;border:1px solid #D3D3D3;  }
+.menu ul ul li a{border:1px solid #D3D3D3; border-width:0 1px 0 0;line-height:26px; height:26px; }
+.menu ul ul a,.menu ul ul a:visited {background:#FFFFD8 ; color:#004080;}
+.menu ul li:hover ul,.menu ul a:hover ul {visibility:visible;}
+.menu ul li ul li a:hover{background:#FFE285;color:#FF0000;line-height:26px; height:26px; top:0; }
+.menu ul ul li{border:1px solid #FFFFD8; border-width:0 0 0 1px;}
+.menu ul ul li:first-child{border-left:0px; }
+.menu ul ul li:first-child a{padding-right:1px;}
+
+.search{border:1px solid #FCA671; margin:5px 0; padding:8px; color:#333333; font-size:14px; font-weight:bold; line-height:26px;}
+.sea_in{ font-size:12px; font-weight:normal; color:#666666;}
+.sea_input{ width:91px;}
+.ser_but{ width:60px; height:24px; border:0; margin-left:2px;}
+
+/*right*/
+.navlist{ height:34px; overflow:hidden;background:#FCC022;border:1px solid #D3D3D3;}
+.navlist span{margin:2px 1px 0 1px;width:80px; height:28px;display:block; float:left;border:1px solid #D3D3D3;padding:0 5px 0 17px;line-height:28px; }
+.navlist li { list-style:none; display:block; float:left; margin:0; line-height:28px; }
+.navlist li a{ display:block; float:left; cursor:pointer;  text-decoration: none; }
+.navlist li a:hover span{ color:#666666; background:#FFF4C2;}
+
+.questionlist{background:#FFFFFF;  border:1px solid #D3D3D3;  padding:5px 10px; font-size:12px; height:100%; clear:both;}
+.questionlist ul a{ display:block; float:left; cursor:pointer;  text-decoration: none;}
+.questionlist ul , .demo ul{list-style:none; line-height:22px; }
+.questionlist li , .demo li{background:url(../_img/security/news_list_dot.gif) left no-repeat; padding-left:16px; float:left; width:347px; }
+.demo li{ width:165px; }
+.demo li a{ display:block; float:left; cursor:pointer;  text-decoration: none;}
+.basic{ margin:5px 0; clear:both;}
+.demo{background:#FFFFFF;  border:1px solid #D3D3D3; height:100%;}
+.demo_title{line-height:30px; font-weight:bold; padding-left:12px; background:#FCC022;}
+.demo_title .more{ float:right; font-size:12px; font-weight:normal; padding-right:15px;}
+.demo ul{ padding:5px 10px;  font-size:12px;}
+
+.cs{background:#FFFFFF; border:1px solid #D3D3D3; margin:5px 0; height:100%;}
+.cs_online{ float:left; height:140px; width:32%; background:url(../_img/help/cs_girl.jpg) bottom left no-repeat; padding-left:30px;}
+.cs_hotline, .cs_email{height:140px; float:left; width:31%; border-left:1px solid #D3D3D3;}
+.cs_title{ font-size:14px; font-weight:bold; color:#333333; padding-left:20px; line-height:30px;}
+.cs_intra{ font-size:12px; color:#666666; padding:10px 20px 0 30px; display:block;}
+.online_link{  display:block; line-height:40px; background:url(../_img/help/online_link.gif) bottom no-repeat; text-align:center; font-weight:bold;} 
+a.online_link:link, a.online_link:visited{ color:#333333;text-decoration: none;}
+
+/*nei*/
+.breadline{ height:25px; line-height:25px; padding-left:20px; border-bottom:#BEBEBE 2px solid; font-size:12px; }
+.breadline span{ font-weight:bold;}
+.helpdetailed{ margin-top:10px;}
+#message190939{ padding-left:16px; }
+.helpdetailedmore{ margin-top:5px; margin-left:-20px;}
+.helpdetailed ul , .helpdetailedmore ul{ margin:0; padding:0;}
+.helpdetailed li,.helpdetailedmore li{ list-style-type:none;  background-position:5px center; border-bottom:#bebebe 1px dashed; height:22px; padding-top:1px; line-height:23px; padding-left:20px; font-size:12px;}
+.helpdetailedmore li{ border-bottom:#E6E6E6 1px dashed; padding-left:20px;}
+.helpdetailed li span{ float:right; display:block;  height:18px; width:100px; margin-top:1px; cursor:pointer;}
+.helpdetailed h1{ font-size:14px; color:#C60001; border-bottom:1px dashed #BFBFBF; margin:0; margin-bottom:20px; margin-left:-20px; padding-left:20px;}
+.helpdetailedmore li{no-repeat 11px 11px;}
+
+.helpAbout{ font-size:12px; padding:3px 15px; color:#333333; font-weight:bold; margin-top:50px; border-bottom:1px solid #BFBFBF; margin-left:-20px; padding-left:20px;}
+.helpAbout input{width:132px; height:23px; float:right; border:0; vertical-align:top;}
+
+table.t_table{ width:700px;}
+table.t_table td{ padding:2px 5px;}
+table.t_table ,table.t_table td,table.t_table th{border: #282E7A 1px solid;border-collapse:coll

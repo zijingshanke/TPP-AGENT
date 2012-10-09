@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BANK>
+	<!-- 中国民生银行接口配置 -->
+	<CMBC>
+		<!-- B2C接口 -->
+		<B2C>
+			<!--商户代码(客户号) -->
+			<corpID>18036</corpID>
+			<!--商户名称 -->
+			<corpName>钱门支付</corpName>
+			<!--币种 -->
+			<PayerCurr>01</PayerCurr>
+			<!--是否实时返回标志 0：即时返回 1：查询 -->
+			<CorpRetType>0</CorpRetType>
+			<!-- 支付请求地址 -->
+			<interfacePath>https://ebank.cmbc.com.cn/weblogic/servlets/EService/CSM/B2C/servlet/ReceiveMerchantCMBCTxReqServlet</interfacePath>
+
+			<!-- 测试：通知地址 -->
+			<!--<retUrl>http://219.131.194.194/fdpay-client/bank/cmbcb2cResult.do</retUrl>-->
+
+			<!-- 通知地址 -->
+			<retUrl>https://www.qmpay.com/bank/cmbcb2cResult.do</retUrl>
+
+			<!-- 加解密组件配置 -->
+
+			<!-- 必须是Base64编码的证书 -->
+			<merCerFile>bankkey/cmbc/b2c/cert/cmbc-base64.cer</merCerFile>
+
+			<!-- 商户证书 .pfx格式 -->
+			<merPfxFile>bankkey/cmbc/b2c/cert/CMBC0630.pfx</merPfxFile>
+
+			<!-- 私钥保护密码 -->
+			<keyPassword>1111</keyPassword>
+		</B2C>
+
+		<!-- 银联支付接口 -->
+		<ChinaPay>
+			<!--商户代码(客户号) -->
+			<corpID>18036</corpID>
+			<!--商户名称 -->
+			<corpName>钱门支付</corpName>
+			<!--币种 -->
+			<PayerCurr>01</PayerCurr>
+			<!--是否实时返回标志 0：即时返回 1：查询 -->
+			<CorpRetType>0</CorpRetType>
+			<!-- 支付请求地址 -->
+			<interfacePath>https://ebank.cmbc.com.cn/weblogic/servlets/EService/CSM/B2C/servlet/ReceiveMerchantCUPTxReqServlet</interfacePath>
+
+			<!-- 测试：通知地址 -->
+			<!--<retUrl>http://125.89.68.86/fdpay-client/bank/cmbcChinaPayResult.do</retUrl> -->
+			<!-- 通知地址 -->
+			<retUrl>https://www.qmpay.com/bank/cmbcChinaPayResult.do</retUrl>
+
+			<!-- 加解密组件配置 -->
+			<!-- 必须是Base64编码的证书 -->
+			<merCerFile>bankkey/cmbc/b2c/cert/cmbc-base64.cer</merCerFile>
+			<!-- 商户证书 .pfx格式 -->
+			<merPfxFile>bankkey/cmbc/b2c/cert/CMBC0630.pfx</merPfxFile>
+			<!-- 私钥保护密码 -->
+			<keyPassword>1111</keyPassword>
+		</ChinaPay>
+	</CMBC>
+</BANK>

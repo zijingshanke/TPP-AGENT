@@ -1,0 +1,78 @@
+package com.fordays.fdpay.bank.citic.biz;
+
+import com.fordays.fdpay.bank.BankUtil;
+import com.fordays.fdpay.bank.citic.CiticB2CcmdToBank;
+import com.lsy.baselib.crypto.processor.ECCryptoProcessor;
+
+public class ECClientTest {
+	public static void main(String[] args) throws Exception {
+		CiticB2CcmdToBank bank=new CiticB2CcmdToBank();
+		bank.getSIGNREQMSG();
+		
+		/** ********签名接口调用************ */
+//		System.out.println("sign message testing ...");
+//		testSign();
+//		System.out.println("sign message testing ...ok");
+		/** ********验签接口调用************ */
+		// System.out.println("verify signature testing ...");
+		// testVerify();
+		// System.out.println("verify signature testing ...ok");
+	}
+
+	static void testSign() throws Exception {
+		// 声明明文消息，实际开发时内容为订单数据
+		String message = "hello, 世界!";
+		// 声明用于处理签名操作的对象
+		com.lsy.baselib.crypto.processor.ECCryptoProcessor processor = new com.lsy.baselib.crypto.processor.ECCryptoProcessor();
+		// 设置签名证书、私钥和私钥密码，实际开发时建议从数据库中读取。
+		// 签名证书、私钥和私钥密码，
+		// 分别对应商户的网上支付系统操作员文件证书的ecclient.cer、ecclient.key和ecclient.pwd三个文件的内容
+		byte[] byteSignercrt = BankUtil.readFileAsByteArray(
+				"E:\\citic\\ecclient.cer").toByteArray();
+		byte[] byteSignerkey = BankUtil.readFileAsByteArray(
+				"E:\\citic\\ecclient.key").toByteArray();
+		byte[] byteKeypasswd = BankUtil.readFileAsByteArray(
+				"E:\\citic\\ecclient.pwd").toByteArray();
+
+		String signercrt = new String(byteSignercrt);
+		String signerkey = new String(byteSignerkey);
+		String keypasswd = new String(byteKeypasswd);
+
+		signercrt="MIIDozCCAwygAwIBAgIQI8wRSJKpc45fMMOx+z3JmzANBgkqhkiG9w0BAQUFADAkMQswCQYDVQQGEwJDTjEVMBMGA1UEChMMQ0ZDQSBURVNUIENBMB4XDTA5MDgxOTA3MjExMFoXDTEwMDgxOTA3MjExMFowdDELMAkGA1UEBhMCQ04xFTATBgNVBAoTDENGQ0EgVEVTVCBDQTENMAsGA1UECxMEdGNjYjEUMBIGA1UECxMLRW50ZXJwcmlzZXMxKTAnBgNVBAMUIDA0MUA1NjY2NjY2MTYtN0BzemUzcmQzQDAwMDAwMDAyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJA7z7+cv0D1siu4pJ1hZixLY1h9TWSHUmL4+EfIPupcir7AbSQMbfQjyNSuyXg5wwnK/y/LeiBZk4Qok+mJuoHgkjZB1pjx42FORU95Sn/6rntQyqcwvn7jb3HW1aSQ5C6n6/+t3TGMZRXjFqNIl+YemPcvg2HGWdSph6x6ClfwIDAQABo4IBhDCCAYAwHwYDVR0jBBgwFoAURnLcJXKfAk5Vg7WA+Qvb6ZOz9EUwHQYDVR0OBBYEFPSyItu2/caQSPyIiNoq+KVmPjbbMAsGA1UdDwQEAwIFoDAMBgNVHRMEBTADAQEAMDsGA1UdJQQ0MDIGCCsGAQUFBwMBBggrBgEFBQcDAgYIKwYBBQUHAwMGCCsGAQUFBwMEBggrBgEFBQcDCDCB5QYDVR0fBIHdMIHaME6gTKBKpEgwRjELMAkGA1UEBhMCQ04xFTATBgNVBAoTDENGQ0EgVEVTVCBDQTEMMAoGA1UECxMDQ1JMMRIwEAYDVQQDEwljcmwxMjdfNDgwgYeggYSggYGGf2xkYXA6Ly8yMTAuNzQuNDEuODc6Mzg5L0NOPWNybDEyN180OCxPVT1DUkwsTz1DRkNBIFRFU1QgQ0EsQz1DTj9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Y2xhc3M9Y1JMRGlzdHJpYnV0aW9uUG9pbnQwDQYJKoZIhvcNAQEFBQADgYEAxFEALtLgjeX8J23VT3Lq7m3UMBi+APSUV8qqlM42qPwCNWx1cLrn2LHUL/Aj/AqqAP6sKEKNgN5nEA8xWb4BI1GJ1fbD4JFcOxNL7u2d6XHVlhvkRjsQoDcMqAB/d2hZWLxPSbaaNmSs8U53WURZi0BcmIhYMz+DwZKlYDAouUY=";
+		signerkey="A1JTQep+2RCzZWEKA1byMuRcKpRv9Kfw+eS6zPqpZfUfi5uqCkx+HMZZibrtJLJehsf2AX62VykE3XVrOnPHRIQIEZO/dWGLwzY06fEM6znebW+7TIHCdjkixSEAuQEoXs0Y6AQ/pehWrUuYjprQKGdiPku8FMX1vcFfxUoysB4V1rRoE24n9elCN6ZvNbNhypnDkFDEUDzxfQxHYwJf/qhNgJhWVUVjxiuMiSdJ3WY9WQWUqdSVdnirGgK3+x/GMoS1oKDXpwKJNnyNit14qJMRjYTNRoxmgcxtykvYQ5XM4+2f4ZwRg7aQYDVfC3q8ivuT3m+x8Z/SdD2RcCViTaFKq40u7Gb8X/PECpJiNXVfm/Vvh7jXlZDHIrlXN09t6r3T/clGiXq+Zn54fzWpObPEhsNBWtCu8K3GQnlz1aBvGg3Xyk3WXXi23gji7X6QImokXM1p52h9jCikTjCPfpGTiF2WiDqvSwQCiHEC7bnLCHjlZcqOmIdgjE32PSfSbVtZaWH0zG8T3HEiSDpqZ/ArlTPVhxl/DYVO4+YPOXwEuQnLXmMXOg5qjX8xTinTFgx4llNkSoCPq6q4zYm5gOfifM2Qw+X0BM9o0skB87Jf+e1xd+NGb0sJgDMnt+2D4upDCwp6MHCqfiuTjSwPBjrgoaN0pH2vuUn4loxLhdpUTy0tcOYaiF1yzQLq4pCHvcgHLqVxoOGvkjXCbLx8Us90MtHTo9jL5sdPpeTWpz8HwpH04vHntcBirTWjzgD/NgmjfY2egity2zZkLfmfIQHYBI6gk+dm+kX0AYTcE08MOccMjPomJ6TnZqst5bWP9ppGaxE37rdqfKId/MVS/PxUQLsCn0paqXbcHA==";
+		keypasswd="HE2lcP1";
+		
+		System.out.println(signercrt);
+		System.out.println(signerkey);
+		System.out.println(keypasswd);
+
+		processor.setSignerCertificate(byteSignercrt);
+		processor.setSignerPrivatekey(byteSignerkey, keypasswd);
+		// 签名对象的声明和私钥的设置需要耗费一定的时间，建议对上述操作进行全局设置。
+		// 对明文消息进行签名，得到BASE64编码的密文消息，包含了明文、签名和证书数据
+		byte[] signedMessage = processor.sign(message.getBytes());
+		System.out.println("signed messge size:" + signedMessage.length);
+		System.out.println("signed messge:\n" + new String(signedMessage));
+	}
+
+	static void testVerify() throws Exception {
+		// 声明密文数据对象，实际开发时为从银行接收的订单支付结果密文数据
+		String signedMessage = "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";
+		// 声明用于处理验签操作的对象
+		ECCryptoProcessor processor = new ECCryptoProcessor();
+		// 声明信任证书
+		// 即为中信银行的网上支付系统服务器证书，用于验证签名是否中信银行签出。
+		// 如何获取网上支付系统的测试和生产服务器证书，请参见常见问题5.1
+		String trustedCrt = "MIIDYzCCAkugAwIBAgIBMDANBgkqhkiG9w0BAQUFADBMMSwwKgYDVQQKDCNDSElOQSBDSVRJQyBCQU5LIENPUlBPUkFUSU9OIExJTUlURTEcMBoGA1UEAwwTQ05DQiBFQyBURVNUIFNFUlZFUjAeFw0wOTA1MjAxMTA3NDhaFw0yOTA1MTUxMTA3NDhaMEwxLDAqBgNVBAoMI0NISU5BIENJVElDIEJBTksgQ09SUE9SQVRJT04gTElNSVRFMRwwGgYDVQQDDBNDTkNCIEVDIFRFU1QgU0VSVkVSMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx66DA5hrSuSmYj/s6dbiexVSGqswPJbo7JdDDRuyFvZYmejdJBRt0wq1TfTgxVn++sEKByOOYGgZebpOM3/mRfz9QoRm8YqMP5HXHQSNyLnUJ4JfxT5XkFRIC7Gk3eKZmv+fVxRSc09zgsGrS45MgJlQdOo3Ckv1NgV4lBDqHK0EkKthVasQ6tAD5sVQLGHodanwnYa+/4VswHnfpj7z0n6rV1zP4ZAJATNyVOSNRZK2/q7Mf61ypAXKSLTDA/ijnZor7uFMKQsU/V+elK3TeZHG+KZ3pYiG8d0ZDNVjb66Zc4JWuM613uZntt1grI1BRMjIOc2H2Lmp9lx8bJLbeQIDAQABo1AwTjAdBgNVHQ4EFgQUT0mNmQzHwVOFbRJ7dIySrHx0HJUwHwYDVR0jBBgwFoAUT0mNmQzHwVOFbRJ7dIySrHx0HJUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAb+bHgKuswiOdfGpGrw/UttBrwccfBzHo9N/5UYvdoAuchAA893GhQeTXjE1xycfqv3fvRulnnvB8EjwCYfFknxNL9bRwDqK0SpqtyC36h9o0Z8BgItfeehmnYzgtuUnkutyscX2bPj8SmILA5t88cUJYpAPZKvM7QlX6ClM3OCyVxnmYEJmNbXiG7Q+SxtWakPC9pK2OFzeRJGitDBypE/NusbCOqIcaSbqoLl/EuGkpDZPtNlIAtzn8j3cauCeEu4wxDZmGU7oHFPYpeXTzAuqU4sQNHUKJR2ooORdUIROASQitybY5JxaIM0GHQJCJVWH2U280pRr28nlOK02Wgw==";
+		// 添加信任证书
+		processor.addTrustedCertificate(trustedCrt.getBytes());
+		// 验签对象的声明和信任证书的设置需要耗费一定的时间，建议对上述操作进行全局设置。
+		// 对密文数据进行验签，
+		processor.verify(signedMessage.getBytes());
+		System.out.println("verify signed messge ok");
+		// 通过ECCryptoProcessor类定义的getOrderMessage方法读取订单明文数据
+		System.out.println("source messge:\n"
+				+ new String(processor
+						.getOrderMessage(signedMessage.getBytes())));
+	}
+}

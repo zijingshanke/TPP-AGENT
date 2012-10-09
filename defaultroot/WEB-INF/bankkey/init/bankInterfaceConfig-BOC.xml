@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<BANK>
+	<!-- 中国银行接口配置 -->
+	<BOC>
+		<B2C>
+			<!-- 订单提交地址 -->
+			<interfacePath>https://ebs.boc.cn:441/PGWPortal/RecvOrder.do</interfacePath>
+			<!-- 订单查询地址 -->
+			<queryPath>https://ebs.boc.cn:441/PGWPortal/QueryOrder.do</queryPath>
+			
+			<!--商户号  -->
+			<merchantNo>104330183980005</merchantNo>
+			<!--支付类型 1-网上购物 2-基金直销  -->
+			<payType>1</payType>
+			<!--订单币种 001-人民币  -->
+			<curCode>001</curCode>
+			<!--客户支付完成后能够返回的商户网站URL  -->
+			<orderUrl>https://localhost/bank/bocb2cResult.do</orderUrl>
+			
+			<!--证书库路径  -->
+			<keyStorePath>bankkey/boc/淘宝网.pfx</keyStorePath>
+			<!--证书库口令  -->
+			<keyStorePassword>11111111</keyStorePassword>
+			<!--签名私钥口令，一般与证书库口令相同  -->
+			<keyPassword>11111111</keyPassword>
+						
+			<!--根证书路径 -->
+			<rootCertificatePath>bankkey/boc/ROOTCA.cer</rootCertificatePath>
+		</B2C>
+	</BOC>
+</BANK>

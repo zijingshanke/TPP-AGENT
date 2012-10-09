@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="false" default-autowire="no"
+	default-dependency-check="none">
+
+	<bean id="sysInitBiz"
+		class="com.fordays.fdpay.system.biz.SysInitBizImp">
+		<property name="agentDAO">
+			<ref bean="agentDAO" />
+		</property>
+	 <property name="coterieDAO">
+			<ref bean="coterieDAO" />
+		</property>
+		<property name="platAgentEmail">
+			<value>qmpay@qmpay.com.cn</value>
+		</property>
+		<property name="platChargeAgentEmail">
+			<value>charge@qmpay.com.cn</value>
+		</property>
+		<property name="platRateAgentEmail">
+			<value>rate@qmpay.com.cn</value>
+		</property>
+	</bean>
+
+	<bean id="provinceBiz"
+		class="com.fordays.fdpay.system.biz.ProvinceBizImpl">
+		<property name="provinceDAO">
+			<ref bean="provinceDAO" />
+		</property>
+	</bean>
+	<bean id="cityBiz"
+		class="com.fordays.fdpay.system.biz.CityBizImpl">
+		<property name="cityDAO">
+			<ref bean="cityDAO" />
+		</property>
+	</bean>
+	<bean id="bankBiz"
+		class="com.fordays.fdpay.system.biz.BankBizImpl">
+		<property name="bankDAO">
+			<ref bean="bankDAO" />
+		</property>
+	</bean>
+
+	<bean id="provinceDAO"
+		class="com.fordays.fdpay.system.dao.ProvinceDAOImpl">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="cityDAO"
+		class="com.fordays.fdpay.system.dao.CityDAOImpl">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="bankDAO"
+		class="com.fordays.fdpay.system.dao.BankDAOImpl">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="taskJob"
+		class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass">
+			<value>com.fordays.fdpay.system.TransactionTaskJob</value>
+		</property>
+
+		<property name="jobDataAsMap">
+			<map>
+				<entry key="transactionBiz">
+					<ref bean="transactionBiz" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>

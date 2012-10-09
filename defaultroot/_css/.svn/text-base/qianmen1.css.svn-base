@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	background: url('../_img/bodyBg.gif') repeat-x top #edf0f4;
+}
+#header {
+	width: 980px;
+	margin: 10px auto 0 auto;
+	position: relative;
+}
+#logo {
+	float: left;
+}
+#logo .logo {
+	height: 73px;
+	width: 265px;
+	display: block;
+	background: url('../_img/logo.jpg') no-repeat;
+}
+#header .quickLink {
+	float: right;
+	margin-right: 10px;
+}
+#header .nav {
+	height: 33px;
+	margin-top: 5px;
+	background: url('../_img/headerNav_bg.gif') no-repeat;
+}
+#header .nav div {
+	height: 33px;
+	line-height: 33px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 4px;
+	padding-left: 10px;
+	background: url('../_img/headerNav_bg.gif') repeat-x 0 -66px;
+}
+#header .nav .otMsg {
+	position: absolute;
+	right: 0;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	#margin-top: -9px;
+	_margin-top: -9px;
+	padding-right: 15px;
+	background: url('../_img/headerNav_bg.gif') no-repeat right -33px;
+}
+#header .quickLink a {
+	color: #005b9b;
+	text-decoration: none;
+}
+#header .quickLink a:hover {
+	color: #005b9b;
+	text-decoration: underline;
+}
+.register {
+	width: 980px;
+	margin: auto;
+}
+.register table {
+	margin-top: 10px;
+}
+.register .container {
+	background: #FFF;
+}
+.register .container .title {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: url('../_img/reg_title_bg.gif') no-repeat #E4E4E4;
+}
+.register .container .title span {
+	display: block;
+	background: url('../_img/reg_title_bg.gif') no-repeat right bottom #E4E4E4;
+}
+.register .container table td {
+	height: 30px;
+	line-height: 30px;
+}
+.register .container table input {
+	width: 200px;
+}
+.register .container table input.radio {
+	width: 15px;
+}
+.register .container .persionAccount {
+	margin: 0 0 5px 15px;
+	padding: 0;
+}
+.register .container .businessAccount {
+	margin: 0 0 5px 15px;
+	padding: 0;
+}
+.register .container table select {
+	width: 205px;
+	height: 22px;
+}
+.register .container div.information {
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 35px;
+	border: 1px solid #CCE;
+	background: url('../_img/info_16.png') no-repeat scroll 6px -297px #eef5ff;
+}
+.register .container div.errors {
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 35px;
+	border: 1px solid #FBC2C4;
+	background: url('../_img/info_16.png') no-repeat scroll 6px -1197px #FBE3E4;
+}
+.register .container div.sucess {
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 35px;
+	border: 1px solid #C6D880;
+	background: url('../_img/info_16.png') no-repeat scroll 6px -597px #E6EFC2;
+}
+.register * {
+	font-size: 12px;
+}
+.require {
+	font-size: 14px;
+	color: #e69f18;
+	position: relative;
+}
+.grayTips {
+	color: #999;
+}
+.regArticleMsg {
+	padding: 5px;
+	margin-top: 10px;
+	height: 180px;
+	overflow-y: scroll;
+	border: 1px solid #CCC;
+}
+.register .agree {
+	margin: 10px auto;
+	text-align: center;
+}
+.register .agree img, .register .agree input {
+	vertical-align: middle;
+	margin: 0 5px;
+}
+.register .agree input {
+	width: 75px;
+}
+.register .agree .information {
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 200px;
+	text-align: left;
+	padding-left: 35px;
+	line-height: 20px;
+	margin: -22px 0 0 540px;
+	#margin: 4px 0 0 0;
+	_margin: 4px 0 0 0;
+	border: 1px solid #cce;
+	background: url('../_img/info_16.png') no-repeat scroll 6px -298px #eef5ff;
+}
+.register .agree .errors {
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 200px;
+	text-align: left;
+	padding-left: 35px;
+	line-height: 20px;
+	margin: -22px 0 0 540px;
+	#margin: 4px 0 0 0;
+	_margin: 4px 0 0 0;
+	border: 1px solid #FBC2C4;
+	background: url('../_img/info_16.png') no-repeat scroll 6px -1198px #FBE3E4;
+}
+.register .agree .submit {
+	margin: 20px 0;
+	width: 200px;
+	font-size: 12px;
+}
+.validataCode {
+	margin-top: 10px;
+}
+
+#footer {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+#footer hr {
+	background: #d3d3d3;
+	color: #d3d3d3;
+}
+.footer .hr {
+	height: 2px;
+	background: #d3d3d3;
+	overflow: hidden;
+}
+.simplyHr {
+	height: 1px;
+	background: #d2d2d2;
+	overflow: hidden;
+}
+.hitBlue {
+	font-weight: bold;
+	color: #005b9b;
+}
+/*圆角表格
+----------------------------------------------------------------------*/
+.tableLT, .tableRT, .tabelLB, .tabelRB {
+	height: 10px;
+	width: 10px;
+	overflow: hidden;
+	background: #F03;
+}
+.tableLT {
+	background: url('../_img/cornerBg.gif') no-repeat left top;
+}
+.tableRT {
+	background: url('../_img/cornerBg.gif') no-repeat -10px 0;
+}
+.tabelLB {
+	background: url('../_img/cornerBg.gif') no-repeat 0 -10px;
+}
+.tabelRB {
+	background: url('../_img/cornerBg.gif') no-repeat -10px -10px;
+}
+.tableTT {
+	background: url('../_img/cornerBg.gif') repeat-x 0 -21px;
+}
+.tableBB {
+	background: url('../_img/cornerBg.gif') repeat-x 0 -31px;
+}
+.tableLL {
+	background: url('../_img/cornerBg_vet.gif') repeat-y;
+}
+.tableRR {
+	background: url('../_img/cornerBg_vet.gif') repeat-y right;
+}
+
+.text_style{
+	border:1px solid #999;
+}
+.yellowBox {
+	background:  url(../_img/Wroning_small.gif) 8px 5px no-repeat #FDFDD0;
+	padding-left: 30px;
+	border: #FCC022 solid 1px;
+	font-size: 12px;
+	line-height: 25px;
+}
